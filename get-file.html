@@ -127,44 +127,32 @@
 					<div class="col-md-12">
 						<div class="widget-area-2 lochana-box-shadow">
 							<h3 class="widget-title">上传文件</h3>
-							<form>
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<label for="patient-name">文件关键词</label>
-										<input type="text" class="form-control" placeholder="Patient name" id="patient-name">
+							<form id="get_File_Form">
+								<div id="addKeyPosition">
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label>文件关键词</label>
+											<input type="text" class="form-control" name="keywords" placeholder="请输入文件关键词">
+										</div>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-12">
-										<button type="button" class="btn btn-outline-success"><span class="ti-plus"></span>添加关键词</button>
+										<button type="button" id="addKeyInput" class="btn btn-outline-success"><span class="ti-plus"></span>添加关键词</button>
 									</div>
 								</div>
-
 								<div class="form-row">
 									<div class="form-group col-md-12">
-										<label for="file">上传密钥文件</label>
-										<input type="file" class="form-control" id="file">
+										<label>上传密钥文件</label>
+										<input type="file" class="form-control" id="upload_file" name="file">
 									</div>
 
 									<div class="form-group col-md-6 mb-3">
-										<button type="submit" class="btn btn-primary btn-lg">提交</button>
+										<button type="submit" id="get_File_btn" class="btn btn-primary btn-lg">提交</button>
 									</div>
 								</div>
 							</form>
-							<!-- Alerts-->
-							<div class="alert alert-success alert-dismissible fade show" role="alert">
-								<strong>Successfully Done!</strong> Please add payment now
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-									<span aria-hidden="true">×</span>
-								</button>
-							</div>
-							<div class="alert alert-warning alert-dismissible fade show" role="alert">
-								<strong>Holy guacamole!</strong> You should check in on some of those fields below.
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-									<span aria-hidden="true">×</span>
-								</button>
-							</div>
-							<!-- /Alerts-->
+
 						</div>
 					</div>
 					<!-- /Widget Item -->
@@ -199,7 +187,7 @@
     
 	<!-- Custom Script-->
 	<script src="js/custom.js"></script>
-
+	<script src="js/common/user.js"></script>
 </body>
 
 </html>

@@ -82,46 +82,42 @@
 				</nav>
 			</div>
 			<!-- /Top Navigation -->
-			<!-- Menu -->
-			<div class="container menu-nav">
-				<nav class="navbar navbar-expand-lg lochana-bg text-white">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="ti-menu text-white"></span>
-					</button>
+				<!-- Menu -->
+				<div class="container menu-nav">
+					<nav class="navbar navbar-expand-lg lochana-bg text-white">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="ti-menu text-white"></span>
+						</button>
 
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item dropdow">
-								<a class="nav-link" href="syspara.html" ><span class="ti-pencil-alt"></span>系统参数</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-								   aria-expanded="false"><span class="ti-user"></span> 用户管理</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="users.html">所有用户</a>
-									<a class="dropdown-item" href="trance.html">追溯恶意用户</a>
-								</div>
-							</li>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link" href="upload-file.html" ><span class="ti-pencil-alt"></span>上传文件</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link" href="get-file.html"><span class="ti-file"></span>下载文件</a>
+								</li>
+								<li class="nav-item dropdown active">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+									   aria-expanded="false"><span class="ti-user"></span> 个人管理</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="user-info.html">查看个人信息</a>
+										<a class="dropdown-item" href="edit-info.html">编辑个人信息</a>
+										<a class="dropdown-item" href="edit-pwd.html">修改密码</a>
+									</div>
+								</li>
 
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-								   aria-expanded="false"><span class="ti-user"></span> 属性管理</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="attrs.html">所有属性</a>
-									<a class="dropdown-item" href="add-attr.html">添加属性</a>
-								</div>
-							</li>
-
-						</ul>
-					</div>
-				</nav>
-			</div>
-			<!-- /Menu -->
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- /Menu -->
 			<!-- Breadcrumb -->
 			<!-- Page Title -->
 			<div class="container mt-0">
 				<div class="row breadcrumb-bar">
+
 					<div class="col-md-6">
 						<h3 class="block-title">查看个人信息</h3>
 					</div>
@@ -143,38 +139,73 @@
 			<!-- /Breadcrumb -->
 			<!-- Main Content -->
 			<div class="container">
+                <div class="row">
+                    <!-- Widget Item -->
+                    <div class="col-md-12">
 
-				<div class="row">
-					<!-- Widget Item -->
-					<div class="col-md-12">
-						<div class="widget-area-2 lochana-box-shadow">
-							<h3 class="widget-title">添加属性</h3>
-							<form id="addAttrForm">
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<label for="room-number">属性名</label>
-										<input  type="text" class="form-control" name="attr" placeholder="请输入属性名" id="room-number">
+                        <div class="widget-area-2 lochana-box-shadow">
+							<div class="bd-example bd-example-tabs">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active show" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">个人基本信息</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">修改用户属性</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+										<div class="table-responsive">
+											<table class="table table-bordered table-striped">
+												<tbody id="personal_info">
+												<tr>
+													<td width="10%"><strong>用户名</strong></td>
+													<td width="90%">PT56</td>
+												</tr>
+												<tr>
+													<td><strong>性别</strong></td>
+													<td>女</td>
+												</tr>
+												<tr>
+													<td><strong>电子邮箱</strong></td>
+													<td>Dr Kiran Sharma</td>
+												</tr>
+												<tr>
+													<td><strong>联系电话</strong></td>
+													<td>16-nov-2018</td>
+												</tr>
+												<tr>
+													<td><strong>属性</strong></td>
+													<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis egestas aliquet.
+														Nunc ullamcorper massa in magna pulvinar, a eleifend felis condimentum.</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										<div class="demo-settings">
+											<p>为用户选择属性</p>
+											<div class="form-check col-md-12 mb-2">
+												<div class="text-left">
+													<div class="custom-control custom-checkbox" style="margin: 5px 0">
+														<input class="custom-control-input" type="checkbox" >
+														<label class="custom-control-label" >属性1</label>
+													</div>
+													<div class="custom-control custom-checkbox" style="margin: 5px 0">
+														<input class="custom-control-input" type="checkbox" >
+														<label class="custom-control-label">属性1</label>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="form-row">
-									<div class="form-group col-md-12">
-										<label for="patient-name">属性描述</label>
-										<input type="text" placeholder="请输入属性描述" class="form-control" id="patient-name" name="info">
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col-md-6 mb-3">
-										<button type="button" class="btn btn-primary btn-lg" id="addAttrButton">保存</button>
-									</div>
-								</div>
-							</form>
-							<!-- Alerts-->
-
-							<!-- /Alerts-->
-						</div>
-					</div>
-					<!-- /Widget Item -->
-				</div>
+							</div>
+                        </div>
+                    </div>
+                    <!-- /Widget Item -->
+                </div>
 			</div>
 			<!-- /Main Content -->
 			<!--Copy Rights-->
@@ -201,8 +232,6 @@
     
 	<!-- Custom Script-->
 	<script src="js/custom.js"></script>
-	<script src="js/common/jquery.serializejson.min.js"></script>
-	<script src="js/common/kgc.js"></script>
 
 </body>
 

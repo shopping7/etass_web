@@ -152,14 +152,14 @@
                             <div class="row no-mp">
 
 								<div class="col-md-12">
-										<form>
+										<form id="trance_form">
 											<div class="form-row">
 												<div class="form-group col-md-12">
 													<label for="file">上传恶意用户密钥</label>
-													<input type="file" class="form-control" id="file">
+													<input type="file" name="file" class="form-control" id="file">
 												</div>
 												<div class="form-group col-md-6 mb-3">
-													<button type="submit" class="btn btn-primary btn-lg">提交</button>
+													<button type="button" id="trance_btn" class="btn btn-primary btn-lg">提交</button>
 												</div>
 											</div>
 										</form>
@@ -170,31 +170,32 @@
                     </div>
                     <!-- /Widget Item -->
                     <!-- Widget Item -->
-                    <div class="col-md-12">
-                        <div class="widget-area-2 lochana-box-shadow">
-                            <h3 class="widget-title">医生 Activity</h3>
-							<div class="row no-mp">
-								<div class="col-md-4">
-								</div>
-								<div class="col-md-4">
-								<div class="card mb-4">
-									<img class="card-img-top" src="images/user2.png" alt="Card image">
-									<div class="card-body">
-										<h4 class="card-title">Dr Daniel Smith</h4>
-										<p class="card-text">Some quick example text to build on the card title and make up the
-											bulk of the
-											card's
-											content.</p>
-										<button type="button" class="btn btn-success mb-2"><span class="ti-pencil-alt"></span> Edit
-											医生</button>
-										<button type="button" class="btn btn-danger"><span class="ti-trash"></span> Delete
-											医生</button>
-									</div>
-								</div>
-							</div>
-							</div>
-                        </div>
-                    </div>
+						<div class="col-md-12" id="showBlack">
+<!--							<div class="widget-area-2 lochana-box-shadow">-->
+<!--								<h3 class="widget-title">恶意用户</h3>-->
+<!--								<div class="row no-mp">-->
+<!--									<div class="col-md-4">-->
+<!--									</div>-->
+<!--									<div class="col-md-4">-->
+<!--										<div class="card mb-4">-->
+<!--											<img class="card-img-top" src="images/user2.png" alt="Card image">-->
+<!--											<div class="card-body">-->
+<!--												<h4 class="card-title">Dr Daniel Smith</h4>-->
+<!--												<p class="card-text">Some quick example text to build on the card title and make up the-->
+<!--													bulk of the-->
+<!--													card's-->
+<!--													content.</p>-->
+<!--												<button type="button" class="btn btn-success mb-2"><span class="ti-pencil-alt"></span> Edit-->
+<!--													医生</button>-->
+<!--												<button type="button" class="btn btn-danger"><span class="ti-trash"></span> Delete-->
+<!--													医生</button>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+						</div>
+
                     <!-- /Widget Item -->
                 </div>
 			</div>
@@ -227,6 +228,7 @@
     
 	<!-- Custom Script-->
 	<script src="js/custom.js"></script>
+	<script src="js/common/kgc.js"></script>
 
 </body>
 

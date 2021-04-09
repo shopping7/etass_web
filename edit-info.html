@@ -144,54 +144,42 @@
 					<div class="col-md-12">
 						<div class="widget-area-2 lochana-box-shadow">
 							<h3 class="widget-title">编辑个人信息</h3>
-							<form>
+							<form id="EditProfileForm">
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<label for="room-number">用户名</label>
-										<input value="10" type="text" class="form-control" placeholder="Room Number" id="room-number">
+										<label>用户名</label>
+										<input  type="text" class="form-control"  name="username" placeholder="用户名" id="editUsername" readonly>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<label for="room-type">性别</label>
-										<select class="form-control" id="room-type">
-											<option>男</option>
-											<option selected>女</option>
+										<label for="editSex">性别</label>
+										<select class="form-control" id="editSex" name="sex" >
+											<option selected value="">未知</option>
+											<option value=true>男</option>
+											<option value=false>女</option>
 										</select>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<label for="patient-name">电子邮箱</label>
-										<input value="Damodar Reddy" type="text" placeholder="名人姓名" class="form-control" id="patient-name">
+										<label for="editEmail">电子邮箱</label>
+										<input type="text" placeholder="电子邮箱" name="email" class="form-control" id="editEmail">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<label for="doctor-name">联系电话</label>
-										<input value="Dr Manoj Kumar" type="text" placeholder="医生 Name" class="form-control" id="doctor-name">
+										<label for="editPhone">联系电话</label>
+										<input type="text" placeholder="联系电话" name="phone" class="form-control" id="editPhone">
 									</div>																	
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6 mb-3">
-										<button type="submit" class="btn btn-primary btn-lg">保存</button>
+										<button type="button" id="editProfileBtn" class="btn btn-primary btn-lg">保存</button>
 									</div>
 								</div>
 							</form>
-							<!-- Alerts-->
-							<div class="alert alert-success alert-dismissible fade show" role="alert">
-								<strong>Updated Successfully!</strong> Please check in Allotment list
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-									<span aria-hidden="true">×</span>
-								</button>
-							</div>
-							<div class="alert alert-warning alert-dismissible fade show" role="alert">
-								<strong>Holy guacamole!</strong> You should check in on some of those fields below.
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-									<span aria-hidden="true">×</span>
-								</button>
-							</div>
-							<!-- /Alerts-->
+
 						</div>
 					</div>
 					<!-- /Widget Item -->
@@ -226,6 +214,8 @@
     
 	<!-- Custom Script-->
 	<script src="js/custom.js"></script>
+	<script src="js/common/jquery.serializejson.min.js"></script>
+	<script src="js/common/user.js"></script>
 
 </body>
 

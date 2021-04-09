@@ -145,33 +145,33 @@
                             <h3 class="widget-title">个人基本信息</h3>
                             <div class="table-responsive">
                                 <table class="table table-bordered table-striped">
-                                    <tbody>
-										<tr>
-											<td width="10%"><strong>用户名</strong></td>
-											<td width="90%">PT56</td>
-										</tr>
-										<tr>
-											<td><strong>性别</strong></td>
-											<td>女</td>
-										</tr>
-										<tr>
-											<td><strong>电子邮箱</strong></td>
-											<td>Dr Kiran Sharma</td>
-										</tr>
-										<tr>
-											<td><strong>联系电话</strong></td>
-											<td>16-nov-2018</td>
-										</tr>
-										<tr>
-											<td><strong>属性</strong></td>
-											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis egestas aliquet.
-												Nunc ullamcorper massa in magna pulvinar, a eleifend felis condimentum.</td>
-										</tr>
+                                    <tbody id="personal_info">
+<!--										<tr>-->
+<!--											<td width="10%"><strong>用户名</strong></td>-->
+<!--											<td width="90%">PT56</td>-->
+<!--										</tr>-->
+<!--										<tr>-->
+<!--											<td><strong>性别</strong></td>-->
+<!--											<td>女</td>-->
+<!--										</tr>-->
+<!--										<tr>-->
+<!--											<td><strong>电子邮箱</strong></td>-->
+<!--											<td>Dr Kiran Sharma</td>-->
+<!--										</tr>-->
+<!--										<tr>-->
+<!--											<td><strong>联系电话</strong></td>-->
+<!--											<td>16-nov-2018</td>-->
+<!--										</tr>-->
+<!--										<tr>-->
+<!--											<td><strong>属性</strong></td>-->
+<!--											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis egestas aliquet.-->
+<!--												Nunc ullamcorper massa in magna pulvinar, a eleifend felis condimentum.</td>-->
+<!--										</tr>-->
                                     </tbody>
                                 </table>
 
-                                <button type="button" class="btn btn-success mb-3"><span class="ti-pencil-alt"></span> Edit
-                                    Appointment</button>
+                                <button type="button" class="btn btn-success mb-3" id="getPKButton"><span class="ti-arrow-down" ></span>下载公钥</button>
+								<button type="button" class="btn btn-success mb-3" id="getSKButton"><span class="ti-arrow-down" ></span>下载私钥</button>
 
                             </div>
                         </div>
@@ -204,6 +204,7 @@
     
 	<!-- Custom Script-->
 	<script src="js/custom.js"></script>
+	<script src="js/common/user.js"></script>
 
 </body>
 
